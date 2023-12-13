@@ -171,8 +171,7 @@ RunService.RenderStepped:Connect(function()
 		AngleY = (AngleY + dist * 0.35) % 360
 		Camera.CameraType = Enum.CameraType.Scriptable
 
-		Camera.CoordinateFrame = CFrame.new(Head.Position) * CFrame.Angles(0, math.rad(AngleY), 0) * CFrame.Angles(math.rad(AngleX), 0, 0) * CFrame.new(0, 0.8, 0) -- offset
-
+		Camera.CoordinateFrame = CFrame.new(Head.Position) * CFrame.Angles(0, math.rad(AngleY), 0) * CFrame.Angles(math.rad(AngleX), 0, 0) * CFrame.new(0, 0.8, 0)
 		HumanoidRootPart.CFrame = CFrame.new(HumanoidRootPart.Position) * CFrame.Angles(0, math.rad(AngleY), 0)
 		Character.Humanoid.AutoRotate = false
 	else
